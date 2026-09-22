@@ -1,0 +1,89 @@
+/* Custom CSS Styles for Hafiz Arslan Fresh Fruit Glass & Instagram Website */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+}
+
+/* Touch friendly minimum tap targets */
+a, button, input, select, textarea {
+    touch-action: manipulation;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+#mobile-menu:not(.hidden) {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Instagram Gradient Text Utility */
+.insta-text {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism panel utility */
+.glass-panel {
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Image Aspect Ratio Fallbacks & Containment */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Fine-Tuned Mobile Responsiveness */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem !important;
+        line-height: 1.25 !important;
+    }
+    
+    .hero-btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .stat-box {
+        padding: 0.75rem !important;
+    }
+}
